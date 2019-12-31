@@ -9,8 +9,8 @@ app.set('view engine','ejs');
 app.use(routes);
 app.use(express.static('public'));
 
-
-var server=app.listen(3000,function(){
+var PORT = process.env.PORT || 3000;
+var server=app.listen(PORT,function(){
     console.log('Now listening to port 3000.');
 })
 
