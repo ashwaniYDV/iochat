@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Login form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(45deg,rgb(32, 159, 209),#fff);
+            }
+            .wrapper{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: #6318a0;
+                color: #fff;
+                padding: 20px;
+            }
+            .header h1{
+                font-size: 48px;
+                text-align: center;
+            }
+            
+            .header p{
+                font-size: 36px;
+                text-align: center;
+            }
+            form{
+                margin: 50px;
+                padding: 10px;
+            }
+            form input{
+                width: 100%;
+                line-height: 28px;
+                margin-bottom: 10px;
+            }
+            form button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                background: #575ed8;
+            }
+            form button:hover{
+                background: orange;
+                color: #fff;
+            }
+        </style>  
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>killer_ash Chat</h1>
+                <p>kickstart...</p>
+            </div>
+            <div class="content">
+                <form id="chat-form" method="post" action="/">
+                    <label for="id">Enter username?</label>
+                    <input type="text" name="username" id="username">
+                    <button type="submit">Enter chat</button>
+                </form>
+            </div>
+        </div>            
+    </body>
+</html> 
